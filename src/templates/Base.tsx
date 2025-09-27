@@ -1,10 +1,10 @@
 import React from "react";
+import User from "./User";
 
 interface BaseProps {
   children: React.ReactNode;
   isDev?: boolean;
 }
-
 export default function Base({ children, isDev }: BaseProps) {
   return (
     <>
@@ -28,7 +28,6 @@ export default function Base({ children, isDev }: BaseProps) {
             href="https://fonts.googleapis.com/css2?family=Sometype+Mono&family=Ubuntu&family=Ubuntu+Mono&display=swap"
             rel="stylesheet"
           ></link>
-
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -47,7 +46,6 @@ export default function Base({ children, isDev }: BaseProps) {
             href="/static/favicon/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicon/site.webmanifest" />
-
           <meta
             name="description"
             content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
@@ -56,7 +54,6 @@ export default function Base({ children, isDev }: BaseProps) {
             name="keywords"
             content="wah.su, radiquum, invite-only, hosting"
           />
-
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="https://home.wah.su/" />
           <meta name="twitter:title" content="WAH.su" />
@@ -68,7 +65,6 @@ export default function Base({ children, isDev }: BaseProps) {
             name="twitter:image"
             content="https://home.wah.su/static/og/opengraph.png"
           />
-
           <meta property="og:title" content="WAH.su" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://home.wah.su/" />
@@ -83,6 +79,7 @@ export default function Base({ children, isDev }: BaseProps) {
             property="og:description"
             content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
           />
+          <script type="module" src="/static/js/oidc.js"></script>
         </head>
         <body className="bg-[#1A0F05] container mx-auto max-w-[1210px] text-white overflow-hidden">
           <div className="background-grid w-full h-screen absolute inset-0 overflow-hidden -z-50"></div>
@@ -97,6 +94,9 @@ export default function Base({ children, isDev }: BaseProps) {
             ></div>
           </div>
           <div className="overflow-y-auto overflow-x-clip h-[100dvh] mb-32 pb-8 scrollbar-hidden">
+            <div>
+              <User />
+            </div>
             {children}
           </div>
           <script src="/static/js/cursor.js"></script>

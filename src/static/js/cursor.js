@@ -27,8 +27,6 @@ let render = () => {
   let delta = (new Date().getTime() - this.last) / 16;
   this.last = new Date().getTime();
 
-  console.log(scroll);
-
   // Base speed, position difference,
   // direction and distance
   let dx = px - sx,
