@@ -4,7 +4,7 @@ import Footer from "./Footer";
 export default function NotBento() {
   return (
     <div className="lg:hidden px-8 mt-8 lg:mt-16 xl:mt-0 w-full grid grid-cols-1 grid-rows-[repeat(7,210px)] sm:grid-rows-[repeat(7,144px)] gap-2">
-      <BentoCard
+      {/* <BentoCard
         logo="/static/images/logos/xbb.png"
         image="/static/images/cards/xbb.png"
         title="XBackBone"
@@ -19,7 +19,7 @@ export default function NotBento() {
         color="17,24,39"
         description="An open network for secure, decentralised communication."
         link="https://chat.wah.su"
-      />
+      /> */}
       <BentoCard
         logo="/static/images/logos/nextcloud.png"
         image="/static/images/cards/nextcloud.png"
@@ -46,14 +46,14 @@ export default function NotBento() {
         description="Platform for managing and browsing your photos. Privacy-Friendly Google Photos alternative."
         link="https://photos.wah.su"
       />
-      <BentoCard
+      {/* <BentoCard
         logo="/static/images/logos/linkwarden.png"
         image="/static/images/cards/linkwarden.png"
         title="Linkwarden"
         color="17,24,39"
         description="Bookmark manager to collect, organize, and preserve webpages."
         link="https://links.wah.su"
-      />
+      /> */}
       <BentoCard
         logo="/static/images/logos/forgejo.png"
         image="/static/images/cards/forgejo.png"
