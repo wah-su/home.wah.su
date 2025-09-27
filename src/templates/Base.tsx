@@ -84,17 +84,6 @@ export default function Base({ children, isDev }: BaseProps) {
             property="og:description"
             content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
           />
-
-          <script
-            defer
-            data-domain="home.wah.su"
-            data-api="https://a.wah.su/api/event"
-            src="https://a.wah.su/js/script.js"
-          ></script>
-          <meta
-            property="og:description"
-            content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
-          />
         </head>
         <body className="bg-[#1A0F05] container mx-auto max-w-[1210px] text-white overflow-hidden">
           <div className="background-grid w-full h-screen absolute inset-0 overflow-hidden -z-50"></div>
