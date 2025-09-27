@@ -7,26 +7,14 @@ export default function Footer({ className, id }: FooterProps) {
   return (
     <div
       id={id}
-      className={`bg-[#3b0d25] w-full h-full ${className} rounded-xl text-xs sm:text-base p-8 flex flex-col items-center justify-center ubuntu-regular`}
+      className={`bg-[#3b0d25] w-full h-full ${className} relative rounded-xl text-xs sm:text-base p-8 flex flex-col items-center justify-center ubuntu-regular`}
     >
+      <img
+        alt="status"
+        src="https://status.wah.su/badge/_/dot?animate=ping"
+        className="w-8 h-8 absolute top-0 right-0"
+      />
       <div className="flex items-start flex-col gap-4">
-        <a
-          href="https://status.wah.su"
-          className="flex flex-row items-center justify-center gap-3 hover:text-[#FF851A] transition-colors"
-          target="_blank"
-        >
-          <div
-            style={{ "--ping-color": "#6a7282" } as React.CSSProperties}
-            className="ml-1 w-4 h-4 relative transition ease-in bg-[var(--ping-color)] rounded-full duration-400"
-            id="status-icon"
-          >
-            <div
-              id="status-icon-ping"
-              className="invisible absolute w-4 h-4 top-0 left-0 scale-90 animate-ping transition ease-in bg-[var(--ping-color)] rounded-full duration-400"
-            ></div>
-          </div>
-          <p id="status-text">...</p>
-        </a>
         <div className="flex gap-8">
           <div className="flex gap-2 sm:gap-2 items-center">
             <div className="inline h-6 w-6 bg-white rounded-full overflow-hidden">

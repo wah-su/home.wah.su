@@ -17,7 +17,6 @@ export default function Base({ children, isDev }: BaseProps) {
           />
           <title>WAH.su</title>
           {isDev ? <script src="/static/js/hotreload.js"></script> : ""}
-          <script src="/static/js/checkstatus.js"></script>
           <link rel="stylesheet" href="/static/css/tailwind.css" />
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link
